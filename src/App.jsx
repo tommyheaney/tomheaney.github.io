@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 import { BentoGrid } from "./components/BentoGrid";
 import { BentoItem } from "./components/BentoItem";
-import { Github, Mail, Code2, Terminal, Linkedin, ExternalLink } from "lucide-react";
+import { Mail, Code2, Terminal, ExternalLink } from "lucide-react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 function App() {
   const containerVariants = {
@@ -100,11 +101,11 @@ function App() {
               <span className="text-neutral-200 font-medium">Email Me</span>
             </motion.a>
             <motion.a variants={itemVariants} href="https://github.com/thomas" target="_blank" rel="noreferrer" className="flex items-center gap-4 p-4 rounded-2xl bg-white/5 hover:bg-white/10 transition-colors border border-white/5">
-              <Github className="text-neutral-400" />
+              <FaGithub className="text-neutral-400 text-xl" />
               <span className="text-neutral-200 font-medium">GitHub</span>
             </motion.a>
             <motion.a variants={itemVariants} href="https://linkedin.com/in/thomas" target="_blank" rel="noreferrer" className="flex items-center gap-4 p-4 rounded-2xl bg-white/5 hover:bg-white/10 transition-colors border border-white/5">
-              <Linkedin className="text-neutral-400" />
+              <FaLinkedin className="text-neutral-400 text-xl" />
               <span className="text-neutral-200 font-medium">LinkedIn</span>
             </motion.a>
           </BentoItem>
